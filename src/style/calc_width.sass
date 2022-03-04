@@ -1,0 +1,12 @@
+@use 'sass:math'
+@mixin width_message($width)
+    @if $width <= 30%
+        border-radius: 80px
+    @else if $width > 30% && $width < 70%
+        border-radius: 20px
+    @else if $width >= 70%
+        border-radius: 10px
+._2646 
+    @include width_message($width: 100%)
+     
+         
